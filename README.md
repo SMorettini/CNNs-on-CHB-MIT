@@ -15,8 +15,10 @@ In the project anaconda was used to managed the packages. Packages required:
 * numpy
 * pyedflib
 * scipy
+
 For the evaluation of the network, training and testing, the GPU is used to have a fast evaluation. By using the CPU the training time is a lot more slowly than using GPU. Packages required for GPU:
 * tensorflow-GPU
+
 For the using of the GPU this link was very useful to install all the driver for Ubuntu 18.04 LTS https://medium.com/@naomi.fridman/install-conda-tensorflow-gpu-and-keras-on-ubuntu-18-04-1b403e740e25 (Note that the GPU used was GTX 850M so I can't ensure that the guide linked will work for different hardware).
 
 ### Installing
