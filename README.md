@@ -1,9 +1,10 @@
 # CNNs-on-CHB-MIT
 The project is about applying CNNs to EEG data from CHB-MIT to predict seizure. It's a group project assigned at UNIVERSITA' DI CAMERINO for computer science bachelor.
+The objective of the project was to try to replicate the result obtained in the paper:
+[Truong, Nhan Duy, et al. "Convolutional neural networks for seizure prediction using intracranial and scalp electroencephalogram." Neural Networks 105 (2018): 104-111.](https://www.sciencedirect.com/science/article/pii/S0893608018301485)
+
 
 ## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 In the project anaconda was used to managed the packages. Packages required:
@@ -32,6 +33,14 @@ Download or clone the repository on your computer and set the parameters:
   - **PathSpectogramFolder**: Path of the folder containing the spectograms;
   - **OutputPath**: file where to save the results;
   - **OutputPathModels**: where to save the CNN models.
+ 
+## Recovering data
+The dataset is downloadable from this site: [https://physionet.org/pn6/chbmit/](https://physionet.org/pn6/chbmit/). To get all the data it's suggested to use this command:
+```
+wget -r --no-parent https://physionet.org/pn6/chbmit/
+```
+In the code only patients 1, 2, 5, 19, 21, 23 are used, the others are discarded for problems in the data.
+**NOTE**: For the patient 19 replace the summary file(chb19-summary.txt) with the one in this repository inside the folder summaryChanged.
 
 ## Running
 
