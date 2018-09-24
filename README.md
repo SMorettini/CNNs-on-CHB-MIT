@@ -3,6 +3,7 @@ The project is about applying CNNs to EEG data from CHB-MIT to predict seizure. 
 The objective of the project was to try to replicate the result obtained in the paper:
 [Truong, Nhan Duy, et al. "Convolutional neural networks for seizure prediction using intracranial and scalp electroencephalogram." Neural Networks 105 (2018): 104-111.](https://www.sciencedirect.com/science/article/pii/S0893608018301485)
 
+The algorithm consist to create spectograms of the data and than use them with a CNN model to predict seizure.
 
 ## Getting Started
 
@@ -47,7 +48,7 @@ In the code only patients 1, 2, 5, 19, 21, 23 are used, the others are discarded
 After setted all the parameters run the code.
 ```
 python DataserToSpectogram.py #Creation of the spectograms
-python CNN.py #Creation of the CNN and evaluation of it on the spectograms
+python CNN.py #Creation of the CNN and evaluation of the model on the spectograms
 python TestThreshold.py #Search the best thresold for each patient
 ```
 
