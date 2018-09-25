@@ -113,7 +113,7 @@ def saveSignalsOnDisk(signalsBlock, nSpectogram):
 
 # Divide i dati contenuti in data in finestre e crea gli spettrogrammi che vengono salvati sul disco
 # S è il fattore che indica di quanto ogni finestra si sposta
-# Restituisce i dati non considerati di data, ciò accade quando i dati non sono divisibile per la lunghezza della finestra
+# Restituisce i dati non considerati, ciò accade quando i dati non sono divisibili per la lunghezza della finestra
 def createSpectrogram(data, S=0):
     global nSpectogram
     global signalsBlock
@@ -164,7 +164,7 @@ def createSpec(data):
     result=(10*np.log10(np.transpose(Pxx))-(10*np.log10(np.transpose(Pxx))).min())/(10*np.log10(np.transpose(Pxx))).ptp()
     return result
 
-# Create spectogram and plot it
+# Creazione spettrogramma e visualizzazione con la libreria matplotlib
 def createSpecAndPlot(data):
     freqs, bins,Pxx =signal.spectrogram(data, nfft=256, fs=256, return_onesided=True, noverlap=128)
     
