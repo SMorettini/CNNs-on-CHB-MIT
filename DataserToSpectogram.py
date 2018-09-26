@@ -367,8 +367,9 @@ def main():
                     notUsed= createSpectrogram(interictalData)
                     totInst+=interictalData.shape[1]/256-notUsed/256       
                     interictalData = np.delete(interictalData, np.s_[0:interictalData.shape[1]-notUsed], axis=1)
-            
-        S=(_SIZE_WINDOW_IN_SECONDS*(len(preictalInfo)*_MINUTES_OF_PREICTAL*60-_SIZE_WINDOW_IN_SECONDS*len(preictalInfo)))/totInst #dimensione_finestra:lunghezza_dati_I=S:(lunghezza_dati_P-30_SEC_PER_OGNI_SEIZURE)
+                    
+        #dimensione_finestra:lunghezza_dati_I=S:(lunghezza_dati_P-30_SEC_PER_OGNI_SEIZURE)  
+        S=(_SIZE_WINDOW_IN_SECONDS*(len(preictalInfo)*_MINUTES_OF_PREICTAL*60-_SIZE_WINDOW_IN_SECONDS*len(preictalInfo)))/totInst 
         if(not (signalsBlock is None)):  
             saveSignalsOnDisk(signalsBlock, nSpectogram)
         signalsBlock=None
