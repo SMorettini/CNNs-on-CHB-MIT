@@ -5,6 +5,8 @@ The objective of the project was to try to replicate the result obtained in the 
 
 The algorithm consist to create spectograms of the data and than use them with a CNN model to predict seizure.
 
+More information are in [presentazione.pdf](presentazione.pdf) and [relazione.pdf](relazione.pdf). The two file are respectively the presentation and the relation of the work in italian language.
+
 ## Getting Started
 
 ### Prerequisites
