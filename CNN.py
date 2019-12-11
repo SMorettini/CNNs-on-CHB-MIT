@@ -23,8 +23,8 @@ PathSpectogramFolder=''
 OutputPath=''
 OutputPathModels=''
 interictalSpectograms=[]
-preictalSpectograms=[]
-preictalRealSpectograms=[]
+preictalSpectograms=[]  #This array contains syntetic data, it's created to have a balance dataset and it's used for training
+preictalRealSpectograms=[]  #This array containt the real preictal data, it's used for testing
 patients = ["01", "02", "05", "19", "21", "23"]
 nSeizure=0
 
