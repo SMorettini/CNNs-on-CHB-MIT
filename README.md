@@ -38,7 +38,7 @@ Download or clone the repository on your computer and set the parameters:
   - **OutputPathModels**: where to save the CNN models.
  
 ## Recovering data
-The dataset is downloadable from this site: [https://physionet.org/pn6/chbmit/](https://physionet.org/pn6/chbmit/). To get all the data it's suggested to use this command:
+The dataset is downloadable from this site: [https://archive.physionet.org/pn6/chbmit/](https://archive.physionet.org/pn6/chbmit/). To get all the data it's suggested to use this command:
 ```
 wget -r --no-parent https://physionet.org/pn6/chbmit/
 ```
