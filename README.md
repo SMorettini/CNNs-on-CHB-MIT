@@ -40,7 +40,7 @@ Download or clone the repository on your computer and set the parameters:
 ## Recovering data
 The dataset is downloadable from this site: [https://archive.physionet.org/pn6/chbmit/](https://archive.physionet.org/pn6/chbmit/). To get all the data it's suggested to use this command:
 ```
-wget -r --no-parent https://physionet.org/pn6/chbmit/
+wget -r --no-parent https://archive.physionet.org/pn6/chbmit/
 ```
 In the code only patients 1, 2, 5, 19, 21, 23 are used, the others are discarded for problems in the data.
 **NOTE**: For the patient 19 replace the summary file(chb19-summary.txt) with the one in this repository inside the folder summaryChanged.
